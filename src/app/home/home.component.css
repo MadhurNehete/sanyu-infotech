@@ -1,0 +1,195 @@
+/* Global Styles */
+.homepage {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Carousel */
+.carousel-item {
+    width: 100%;
+    height: 650px;
+    margin-top: 60px;
+}
+
+/* About Us */
+.aboutus{
+    margin-top: 60px;
+}
+
+.aboutus .card .card-title {
+    color: #ff5722;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.aboutus .row .col-md-7 h2 {
+    color: #ff4500;
+    font-weight: 700;
+    font-size: 38px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.aboutus .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+    font-size: 1.1rem;
+}
+
+.aboutus .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.aboutus .feature-item i {
+    color: #ff4500;
+    font-size: 1.4rem;
+}
+
+/* Our Services */
+.services{
+    margin-top: 100px;
+}
+
+.services-section h2 {
+    color: #ff4500;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 90px 0px 60px 0px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services-section h5 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.card-lift {
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    background: white;
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Why Choose Us */
+.row .col-lg-6 img {
+    height: 550px;
+    width: 480px;
+}
+
+/* Contact Box */
+.request .contact-box {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.request .call-icon {
+    width: 50px;
+    height: 50px;
+    background: #ff4500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.request .call-icon i {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.request .contact-text {
+    margin-left: 15px;
+}
+
+.request .contact-text p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.request .phone-number {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* Motion Line */
+.motion-line {
+    position: relative;
+    top: 10%;
+    left: 0;
+    width: 12px;
+    height: 4px;
+    background: rgb(240, 240, 240);
+    animation: moveLine 2s linear infinite;
+    color: #0b0b0b;
+}
+
+.center-box {
+    width: 30%;
+    margin: 0 auto 20px auto; /* Centers the div */
+    text-align: center;
+    background-color: #ff4d00;
+}
+
+@keyframes moveLine {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+    to {
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .carousel {
+       
+        height: 200px;
+        width: 100%;
+        
+        z-index: 0; /* Lower this if too high */
+        
+    }
+
+    .carousel-item img {
+        margin-top: 0%;
+        object-fit: contain;
+    }
+
+    .about-img {
+    
+        width: 90%;
+    }
+
+    #count-section{
+        margin-top: 130px;
+    }
+    
+}
