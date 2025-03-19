@@ -1,11 +1,12 @@
-.navbar {
+/* Global Styles */
+body {
+    padding-top: 80px; /* Adjust for fixed navbar */
     font-family: 'Nunito', sans-serif;
 }
 
 /* Navbar */
 .custom-navbar {
-    background-color: #ffffff;
-    /* White background */
+    background-color: #ffffff; /* White background */
     padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -19,27 +20,15 @@
     font-size: 30px;
     font-weight: bold;
     color: #000;
-   
 }
 
-
-.navbar-nav .nav-item .nav-link .active {
-    color: #ff6600;
-}
-
-.navbar-nav .nav-item{
-    font-family: 'Nunito', sans-serif;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
+/* Navbar Links */
 .navbar-nav .nav-item .nav-link {
     color: #000;
     font-size: 18px;
     margin-right: 15px;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -47,7 +36,23 @@
     text-decoration: underline;
     font-weight: bold;
 }
-.nav-link.active {
+
+.navbar-nav .nav-item .nav-link.active {
     color: #ff4d00 !important;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .navbar-brand {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
